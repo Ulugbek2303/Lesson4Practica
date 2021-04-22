@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Logo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">О нас</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Всплывающее окно
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Искать</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main >
+        <div class="row mt-5 bg-light m-5">
+            <h1>Привет Мир!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quis nisi sit, esse a non id hic velit eaque repudiandae ab ipsum, dicta pariatur in reiciendis recusandae sequi eius quo.</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, aliquid! Quisquam nam facere asperiores provident fuga ab impedit, corrupti blanditiis sapiente facilis, reprehenderit suscipit laboriosam, laudantium iste ratione excepturi error.</p>
+            
+            <div class="text-center">
+                <p>
+                   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Узнать Больше!
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+        <section class="container col-lg-12 col-md-8 col-sm-4">
+            <div class="row d-flex justify-content-around mt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/originals/35/82/21/358221b85dc0c666cbd6bf4961a260db.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Open Carousel
+                    </button>
+      
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                            <div class="modal-body ">
+                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                             <div class="carousel-item active">
+                        <img src="https://wallpaperaccess.com/full/685208.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                      <div class="carousel-item">
+                        <img src="https://wallpaperaccess.com/full/685208.jpg" class="d-block w-100" alt="...">
+                         </div>
+                      <div class="carousel-item">
+                        <img src="https://wallpaperaccess.com/full/685208.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/originals/35/82/21/358221b85dc0c666cbd6bf4961a260db.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Open Carousel
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://wallpaperaccess.com/full/685208.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://wallpaperaccess.com/full/685208.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://wallpaperaccess.com/full/685208.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/originals/35/82/21/358221b85dc0c666cbd6bf4961a260db.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                               <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary"       data-bs-toggle="modal"                  data-bs-target="#exampleModal">
+                            Open Carousel
+                </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://wallpaperaccess.com/full/685208.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://wallpaperaccess.com/full/685208.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://wallpaperaccess.com/full/685208.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" class="btn btn-success">Добавить новый</button>
+                    <form class="d-flex w-50">
+                      <input class="form-control me-5 w-100" type="search" placeholder="Найти товар..." aria-label="Search">
+                      <button class="btn btn-danger me-4" type="submit">Найти</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </section>
+        <section class="  d-flex justify-content-around flex-warp">
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+        <section class="d-flex justify-content-around flex-warp">
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+        <section class="d-flex justify-content-around">
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+        <section class="d-flex justify-content-around flex-warp">
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+        <section class=" row d-flex justify-content-around flex-warp">
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="bg-dark">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-white">Title</p>
+                    </div>
+                </div>
+                <div class="p-3 card">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laborum quam reprehenderit odit sequi corporis suscipit expedita est consequuntur repellat, repellendus cumque ullam optio sed similique quos eveniet, mollitia rem.</p>
+                </div>
+                <div class="p-2 text-center card">
+                    <div class="">
+                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-primary">More</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            
+                
+        </section>
+</main>
+    <footer>
+        <section>
+            <nav class="d-flex justify-content-center mt-5" aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link bg-primary text-white" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link bg-primary text-white" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link bg-primary text-white" href="#">2</a></li>
+                  <li class="page-item "><a class="page-link bg-primary text-white" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link bg-primary text-white" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </section>
+        <hr>
+        <section class="d-flex justify-content-center ">
+            <span class="badge bg-primary">#HTML</span>
+            <span class="badge bg-secondary">#CSS</span>
+            <span class="badge bg-success">#BOOTSTRAP</span>
+            <span class="badge bg-danger">#GitHub</span>
+            <span class="badge bg-warning text-dark">#JavaScript</span>
+            <span class="badge bg-info text-dark">#React</span>
+            <span class="badge bg-light text-dark">#Java</span>
+            <span class="badge bg-dark">#Payton</span>
+        </section>
+        <div class="text-center mt-4">
+            <h3>IT ACADEMY Osh 2020</h3> 
+        </div>
+    </footer>
+</body>
+</html>
